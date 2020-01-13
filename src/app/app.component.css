@@ -1,0 +1,7 @@
+.banner {
+  background-color: darkgray;
+  width: auto;
+  height: 70px;
+  padding-left: 15px;
+  border: 1px solid darkgray;
+}

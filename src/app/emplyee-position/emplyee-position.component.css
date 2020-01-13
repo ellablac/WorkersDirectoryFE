@@ -1,0 +1,21 @@
+.employee {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin: 10px;
+}
+
+.employeeName {
+  border: none;
+  background-color: white;
+  width: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.employeeRole {
+  font-size: 20px;
+  height: 20px;
+  width: 100px;
+}

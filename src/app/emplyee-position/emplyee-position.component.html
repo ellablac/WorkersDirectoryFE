@@ -1,0 +1,4 @@
+<div class="employee" *ngFor="let employee of Emps">
+  <a [routerLink] = '["/edit-emp", employee.id]'>{{employee.name}}</a>
+  <p class="employeeRole">{{ employee.role }}</p>
+</div>
