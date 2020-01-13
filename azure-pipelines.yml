@@ -21,11 +21,12 @@ steps:
     ng build --prod
   displayName: 'npm install and build'
   
+    
 - task: CopyFiles@2
   inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)'    
-
-- task: PublishBuildArtifacts@1    
-  displayName: 'Publish Artifact: drop'
+    contents: '_buildOutput\**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+- task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
